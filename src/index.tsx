@@ -8,18 +8,21 @@ const getIndexFile = () => {
     "DESKTOP": 'index-desktop',
     "MOBILE": 'index-mobile',
   }
-// desktop https://6321c1cd60c6c91177543c2a--desktop-bundle-test.netlify.app/
+
   const buildTarget: string = process.env.REACT_APP_BUILD_TARGET!;
 
   if(buildTarget) {
     return environments[buildTarget];
   }
-
+  alert(`window.location.hostname: ${window.location.hostname}`);
   switch (window.location.hostname) {
-    case '':
+    case 'artemlaptev63.github.io':
       return environments.MOBILE
-    default:
+    case 'desktop-bundle-test.netlify.app':
       return environments.DESKTOP
+    default:
+      alert("Error");
+      throw new Error("unknown domain name")
   }
 
 }
@@ -40,3 +43,13 @@ root.render(
 // to log results (for example: reportWebVitals(console.log))
 // or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
 reportWebVitals();
+
+
+
+// вынести логику проверки девайса из компонентов чтобы не выгружать лишний раз
+// ненужный бандл в функцию getIndexFile, проверить dev или prod, если dev то вернуть
+// из конфига, если prod то посмотреть какой девайс и вернуть нужный
+
+// добавить алерты вместо консоль логов чтобы понимать что лишние не попали
+
+// приложение должно быть одно - на данный момент есть два App для мобилки и десктопа отдельно
