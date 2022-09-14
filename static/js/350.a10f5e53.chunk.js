@@ -1,2 +1,0 @@
-"use strict";(self.webpackChunktwo_bundles_mobile_desktop=self.webpackChunktwo_bundles_mobile_desktop||[]).push([[350],{350:function(n,e,t){t.r(e),t.d(e,{default:function(){return s}});t(791);var u=t(355),o=t(184),r=function(){return(0,o.jsxs)("h1",{children:["Desktop app ",(0,u.S)()]})};console.log("desktop");var s=function(){return(0,o.jsx)(r,{})}},355:function(n,e,t){t.d(e,{S:function(){return u}});var u=function(){return"shared data"}}}]);
-//# sourceMappingURL=350.a10f5e53.chunk.js.map
