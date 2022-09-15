@@ -1,2 +1,0 @@
-"use strict";(self.webpackChunktwo_bundles_mobile_desktop=self.webpackChunktwo_bundles_mobile_desktop||[]).push([[680],{680:function(n,e,t){t.r(e),t.d(e,{default:function(){return i}});t(791);var r=t(355),o=t(184),u=function(){return(0,o.jsxs)("h1",{children:["Mobile app ",(0,r.S)()," version 4"]})};alert("mobile");var i=function(){return alert(window.location.replace),(0,o.jsx)(u,{})}},355:function(n,e,t){t.d(e,{S:function(){return r}});var r=function(){return"shared data"}}}]);
-//# sourceMappingURL=680.9986c419.chunk.js.map
