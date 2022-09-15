@@ -1,0 +1,17 @@
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: calc(100vw - 4rem);
+    height: calc(100vh - 4rem);
+    margin: 2rem;
+}
+
+@media (max-width: 767px) {
+    .container {
+        align-items: flex-start;
+        width: calc(100vw - 2rem);
+        height: calc(100vh - 2rem);
+        margin: 1rem;
+    }
+}

@@ -1,0 +1,17 @@
+.card {
+    width: 20rem;
+    height: 15rem;
+    background: white;
+    border: 1px solid gray;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+@media (max-width: 767px) {
+    .card {
+        width: 100%;
+    }
+}

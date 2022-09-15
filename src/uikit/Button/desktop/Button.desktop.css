@@ -1,0 +1,10 @@
+.button-desk {
+    width: 10rem;
+    height: 5rem;
+    background: orangered;
+    border: 1px solid orangered;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
