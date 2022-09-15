@@ -3,6 +3,31 @@ import ReactDOM from 'react-dom/client';
 import './index.css';
 import reportWebVitals from './reportWebVitals';
 
+function isMob() {
+  const toMatch = [
+    /Android/i,
+    /webOS/i,
+    /iPhone/i,
+    /iPad/i,
+    /iPod/i,
+    /BlackBerry/i,
+    /Windows Phone/i
+  ];
+
+  return toMatch.some((toMatchItem) => {
+    return navigator.userAgent.match(toMatchItem);
+  });
+}
+
+// if(!isMob() && process.env.NODE_ENV === "production") {
+//   window.location.replace("https://desktop-bundle-test.netlify.app")
+//   return null;
+// }
+// if(isMob() && process.env.NODE_ENV === "production") {
+//   window.location.replace("https://artemlaptev63.github.io/mobile-bundle")
+//   return null;
+// }
+
 const getIndexFile = () => {
   const environments: {[key: string]: string} = {
     "DESKTOP": 'index-desktop',
@@ -15,14 +40,10 @@ const getIndexFile = () => {
     return environments[buildTarget];
   }
 
-  switch (window.location.hostname) {
-    case 'artemlaptev63.github.io':
-      return environments.MOBILE
-    case 'desktop-bundle-test.netlify.app':
-      return environments.DESKTOP
-    default:
-      alert("Error");
-      throw new Error("unknown domain name")
+  if(isMob()) {
+    return environments.MOBILE;
+  } else {
+    return environments.DESKTOP;
   }
 
 }
@@ -43,12 +64,6 @@ root.render(
 // to log results (for example: reportWebVitals(console.log))
 // or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
 reportWebVitals();
-
-
-
-// вынести логику проверки девайса из компонентов чтобы не выгружать лишний раз
-// ненужный бандл в функцию getIndexFile, проверить dev или prod, если dev то вернуть
-// из конфига, если prod то посмотреть какой девайс и вернуть нужный
 
 // приложение должно быть одно - на данный момент есть два App для мобилки и десктопа отдельно
 
