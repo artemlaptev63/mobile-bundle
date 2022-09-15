@@ -14,7 +14,7 @@ const getIndexFile = () => {
   if(buildTarget) {
     return environments[buildTarget];
   }
-  alert(`window.location.hostname: ${window.location.hostname}`);
+
   switch (window.location.hostname) {
     case 'artemlaptev63.github.io':
       return environments.MOBILE
@@ -50,6 +50,5 @@ reportWebVitals();
 // ненужный бандл в функцию getIndexFile, проверить dev или prod, если dev то вернуть
 // из конфига, если prod то посмотреть какой девайс и вернуть нужный
 
-// добавить алерты вместо консоль логов чтобы понимать что лишние не попали
-
 // приложение должно быть одно - на данный момент есть два App для мобилки и десктопа отдельно
+

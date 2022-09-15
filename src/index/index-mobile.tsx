@@ -1,11 +1,10 @@
 import { App } from "../mobile";
 
 const Render = () => {
-  if(!isMob()) {
+  if(!isMob() && process.env.NODE_ENV === "production") {
     window.location.replace("https://desktop-bundle-test.netlify.app")
     return null;
   }
-  alert(window.location.replace)
   return <App/>;
 };
 

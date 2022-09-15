@@ -2,7 +2,7 @@ import { App } from "../desktop";
 
 const Render = () => {
 
-  if(isMob()) {
+  if(isMob() && process.env.NODE_ENV === "production") {
     window.location.replace("https://artemlaptev63.github.io/mobile-bundle")
     return null;
   }
