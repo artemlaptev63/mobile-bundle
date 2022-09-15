@@ -1,19 +1,19 @@
 {
   "files": {
-    "main.css": "/mobile-bundle/static/css/main.e6c13ad2.css",
-    "main.js": "/mobile-bundle/static/js/main.ce78aaaf.js",
-    "static/js/350.d75647a7.chunk.js": "/mobile-bundle/static/js/350.d75647a7.chunk.js",
-    "static/js/680.43339a18.chunk.js": "/mobile-bundle/static/js/680.43339a18.chunk.js",
-    "static/js/787.6677eab6.chunk.js": "/mobile-bundle/static/js/787.6677eab6.chunk.js",
-    "index.html": "/mobile-bundle/index.html",
-    "main.e6c13ad2.css.map": "/mobile-bundle/static/css/main.e6c13ad2.css.map",
-    "main.ce78aaaf.js.map": "/mobile-bundle/static/js/main.ce78aaaf.js.map",
-    "350.d75647a7.chunk.js.map": "/mobile-bundle/static/js/350.d75647a7.chunk.js.map",
-    "680.43339a18.chunk.js.map": "/mobile-bundle/static/js/680.43339a18.chunk.js.map",
-    "787.6677eab6.chunk.js.map": "/mobile-bundle/static/js/787.6677eab6.chunk.js.map"
+    "main.css": "https://artemlaptev63.github.io/mobile-bundle/static/css/main.e6c13ad2.css",
+    "main.js": "https://artemlaptev63.github.io/mobile-bundle/static/js/main.ac6c938c.js",
+    "static/js/350.3017eb52.chunk.js": "https://artemlaptev63.github.io/mobile-bundle/static/js/350.3017eb52.chunk.js",
+    "static/js/680.65af3b1d.chunk.js": "https://artemlaptev63.github.io/mobile-bundle/static/js/680.65af3b1d.chunk.js",
+    "static/js/787.6677eab6.chunk.js": "https://artemlaptev63.github.io/mobile-bundle/static/js/787.6677eab6.chunk.js",
+    "index.html": "https://artemlaptev63.github.io/mobile-bundle/index.html",
+    "main.e6c13ad2.css.map": "https://artemlaptev63.github.io/mobile-bundle/static/css/main.e6c13ad2.css.map",
+    "main.ac6c938c.js.map": "https://artemlaptev63.github.io/mobile-bundle/static/js/main.ac6c938c.js.map",
+    "350.3017eb52.chunk.js.map": "https://artemlaptev63.github.io/mobile-bundle/static/js/350.3017eb52.chunk.js.map",
+    "680.65af3b1d.chunk.js.map": "https://artemlaptev63.github.io/mobile-bundle/static/js/680.65af3b1d.chunk.js.map",
+    "787.6677eab6.chunk.js.map": "https://artemlaptev63.github.io/mobile-bundle/static/js/787.6677eab6.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.e6c13ad2.css",
-    "static/js/main.ce78aaaf.js"
+    "static/js/main.ac6c938c.js"
   ]
 }
